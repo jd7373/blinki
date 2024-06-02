@@ -7,6 +7,10 @@
     tools:context=".SignInFragment">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,8 +20,10 @@
             android:id="@+id/ivLoginImage"
             android:layout_width="@dimen/_320sdp"
             android:layout_height="@dimen/_300sdp"
+            android:contentDescription="@string/todo1"
             android:scaleType="centerCrop"
-            android:src="@drawable/image_prod" />
+            android:src="@drawable/image_prod"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/ivIconcon"
@@ -25,6 +31,7 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
             android:layout_marginTop="13.00dp"
+            android:contentDescription="@string/todo"
             android:src="@drawable/icon" />
 
         <TextView
@@ -32,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="13.00dp"
-            android:text="India's last minute app"
+            android:text="@string/india_s_last_minute_app1"
             android:textColor="@color/black"
             android:textSize="22.10sp"
             android:textStyle="bold" />
@@ -41,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Login or Sign Up"
+            android:text="@string/login_or_sign_up"
             android:textColor="@color/black"
             android:textSize="16.90sp" />
 
@@ -56,14 +63,15 @@
             app:endIconMode="clear_text"
             app:boxCornerRadiusTopStart="16.90dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUsernumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/baseline_local_phone_24"
-            android:drawablePadding="9.10dp"
-            android:hint="Enter mobile number"
-            android:inputType="number" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsernumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_local_phone_24"
+                android:drawablePadding="9.10dp"
+                android:hint="@string/enter_mobile_number"
+                android:inputType="number"
+                android:textColorHint="#8D6E63" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,12 +83,14 @@
             android:layout_marginTop="8dp"
             android:backgroundTint="#8d99ae"
             android:gravity="center"
-            android:text="continue"
+            android:text="@string/Continue"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
+            android:textColor="#263238"
             app:cornerRadius="12dp" />
 
     </LinearLayout>
+
+ </ScrollView>
 
 
 </LinearLayout>

@@ -6,4 +6,12 @@
     <string name="it">it</string>
     <string name="india_s_last_minute_app">India\'s Last minute app</string>
     <string name="a_zomato_company">A Zomato COMPANY</string>
+    <string name="login_or_sign_up">Login or Sign Up</string>
+    <string name="Continue">continue</string>
+    <string name="india_s_last_minute_app1">India\'s last minute app</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="we_have_sent_verification_code_to">We have sent verification code to</string>
+    <string name="loading">loading....</string>
 </resources>
